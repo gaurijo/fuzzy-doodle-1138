@@ -5,9 +5,8 @@ class RideMechanicsController < ApplicationController
     rm = RideMechanic.create(ride_id: ride.id, mechanic_id: mechanic.id)
     redirect_to "/mechanics/#{params[:id]}"
   end
-
-  private 
-  def ride_mechanic_params
-    params.permit(:ride_id, :mechanic_id)
-  end
+  # private 
+  # def ride_mechanic_params
+  #   params.permit(:ride_id, :mechanic_id)
+  # end
 end

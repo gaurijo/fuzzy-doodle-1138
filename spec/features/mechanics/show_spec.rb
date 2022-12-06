@@ -22,7 +22,7 @@ RSpec.describe "Mechanic Show Page" do
 
     expect(page).to have_content("Name: #{@bob.name}")
     expect(page).to have_content("Years of Experience: #{@bob.years_experience}")
-    expect(page).to have_content("Rides: Death Spiral")
+    expect(page).to have_content("Current Rides: Death Spiral")
     expect(page).to have_content("Life Twirl")
   end
 
